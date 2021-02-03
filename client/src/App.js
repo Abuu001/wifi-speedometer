@@ -12,7 +12,6 @@ function App() {
 
   const getInternetSpeed=async ()=>{
    await axios.get('/api/speed-test').then(response=>{
-      console.log(response.data.speed);
       setSpeed(response.data.speed)
       startMethod()
     }) 
